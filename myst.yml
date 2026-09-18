@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: f0fbd370-ad98-4e75-8fdc-8f3ebb6a1ad2
+  title: Personal Portfolio
+  toc:
+    - file: intro.md
+  # description:
+  # keywords: []
+  # authors: []
+  # github:
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  options:
+    style: custom.css

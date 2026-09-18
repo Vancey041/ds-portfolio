@@ -1,0 +1,23 @@
+/* Force Dark Classroom Chalkboard Theme */
+body, .myst-container {
+  background-color: #1a2b22 !important; /* Dark chalkboard green */
+  color: #f5f5f5 !important; /* Chalk white */
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* Target headers to look like yellow chalk */
+h1, h2, h3 {
+  color: #ffd700 !important; 
+}
+
+/* Boomerang Animation */
+@keyframes boomerang {
+  0% { transform: translateX(0) scale(1); }
+  50% { transform: translateX(30px) scale(1.05); }
+  100% { transform: translateX(0) scale(1); }
+}
+
+.animate-boomerang {
+  display: inline-block;
+  animation: boomerang 3s infinite ease-in-out;
+}

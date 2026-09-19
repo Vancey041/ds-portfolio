@@ -5,6 +5,9 @@
     <loc>http://localhost:3000</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/notebooks</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/laboratory-task-2-01-understanding-deep-learning</loc>
   </url>
   <url>

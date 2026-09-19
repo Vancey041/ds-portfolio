@@ -5,10 +5,13 @@ project:
   title: Personal Portfolio
   toc:
     - file: intro.md
-    - file: Laboratory Task 2 (01_Understanding Deep Learning).ipynb
-    - file: Laboratory Task 3 (01_Understanding Deep Learning).ipynb
-    - file: Laboratory Task 4 (01_Understanding Deep Learning).ipynb
-    - file: Laboratory Task 5 (02_PyTorch Basics).ipynb
+    - file: notebooks.md
+      children:
+        - file: Laboratory Task 2 (01_Understanding Deep Learning).ipynb
+        - file: Laboratory Task 3 (01_Understanding Deep Learning).ipynb
+        - file: Laboratory Task 4 (01_Understanding Deep Learning).ipynb
+        - file: Laboratory Task 5 (02_PyTorch Basics).ipynb
+
   # description:
   # keywords: []
   # authors: []

@@ -12,7 +12,7 @@ html, body, main, article, .myst-article {
   font-family: 'Courier New', Courier, monospace !important;
 }
 
-/* 2. Force headers to look like yellow chalk */
+/* 2. Force main headers to look like yellow chalk */
 h1, h2, h3 {
   color: #ffd700 !important; 
 }
@@ -30,16 +30,32 @@ h1 {
   animation: boomerang 3s infinite ease-in-out !important;
 }
 
-/* Make notebook content areas white */
-.cell {
+/* 5. Force a solid white background on all notebook content */
+.cell,
+.cell_input,
+.cell_output,
+.text_cell_render,
+.highlight,
+.highlight pre {
     background-color: #ffffff !important;
-    padding: 20px !important;
     border-radius: 8px !important;
-    margin-bottom: 20px !important;
 }
 
-/* Ensure text inside the notebooks is dark so it can be read */
-.cell .text_cell_render, 
-.cell .output_subarea {
+/* 6. Force text inside the white notebook blocks to be black */
+.text_cell_render,
+.text_cell_render p,
+.text_cell_render li,
+.cell_output,
+.cell_output div,
+.highlight pre,
+.highlight span {
     color: #000000 !important;
+}
+
+/* 7. Make notebook headers black and stop them from bouncing */
+.text_cell_render h1,
+.text_cell_render h2,
+.text_cell_render h3 {
+    color: #000000 !important;
+    animation: none !important; 
 }

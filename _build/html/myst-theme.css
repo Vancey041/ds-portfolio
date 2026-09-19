@@ -1,12 +1,9 @@
 /* User Provided Stylesheet */
 
 /* 1. Dark Classroom Theme & Background */
-html, body, main, article, .myst-article {
+html, body, main {
   background-color: #1a2b22 !important; 
-  
-  /* Replace this with your direct .jpg or .png link */
   background-image: url('https://preview.redd.it/japanese-classroom-v0-ky17n8as0nw31.png?auto=webp&s=d8c7975591650134a3077cf528876a5584344141') !important;
-  
   background-size: cover !important;
   background-attachment: fixed !important;
   background-blend-mode: overlay !important; 
@@ -14,7 +11,7 @@ html, body, main, article, .myst-article {
   font-family: 'Courier New', Courier, monospace !important;
 }
 
-/* 2. Force main headers to look like yellow chalk */
+/* 2. Global headers look like yellow chalk */
 h1, h2, h3 {
   color: #ffd700 !important; 
 }
@@ -26,38 +23,37 @@ h1, h2, h3 {
   100% { transform: translateX(0) scale(1); }
 }
 
-/* 4. Apply animation directly to the main title (H1) */
+/* 4. Apply animation to main title */
 h1 {
   display: inline-block !important;
   animation: boomerang 3s infinite ease-in-out !important;
 }
 
-/* 5. Force a solid white background on all notebook content */
-.cell,
-.cell_input,
-.cell_output,
-.text_cell_render,
-.highlight,
+/* 5. FORCE JUPYTER NOTEBOOKS TO BE SOLID WHITE */
+.cell, 
+.cell_input, 
+.cell_output, 
+.text_cell_render, 
 .highlight pre {
+    background: #ffffff !important;
     background-color: #ffffff !important;
+    background-image: none !important; /* This stops the classroom bleed-through */
     border-radius: 8px !important;
+    padding: 15px !important;
 }
 
-/* 6. Force text inside the white notebook blocks to be black */
-.text_cell_render,
-.text_cell_render p,
-.text_cell_render li,
-.cell_output,
-.cell_output div,
-.highlight pre,
-.highlight span {
+/* 6. FORCE TEXT INSIDE NOTEBOOKS TO BE BLACK */
+.cell, 
+.cell p, 
+.cell li, 
+.cell span, 
+.cell div, 
+.highlight pre {
     color: #000000 !important;
 }
 
-/* 7. Make notebook headers black and stop them from bouncing */
-.text_cell_render h1,
-.text_cell_render h2,
-.text_cell_render h3 {
+/* 7. Notebook headers are black and do not bounce */
+.cell h1, .cell h2, .cell h3 {
     color: #000000 !important;
-    animation: none !important; 
+    animation: none !important;
 }

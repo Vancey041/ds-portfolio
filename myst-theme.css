@@ -57,3 +57,18 @@ h1 {
     color: #000000 !important;
     animation: none !important;
 }
+
+/* 8. BRUTE FORCE WHITE BACKGROUND FOR ALL NOTEBOOK LAYERS */
+div.cell,
+div.jp-Cell,
+div.cell_input,
+div.cell_output,
+div.jp-InputArea,
+div.jp-OutputArea,
+div.text_cell_render,
+div.highlight,
+div.highlight pre {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}

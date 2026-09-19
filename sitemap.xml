@@ -4,4 +4,16 @@
   <url>
     <loc>http://localhost:3000</loc>
   </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-2-01-understanding-deep-learning</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-3-01-understanding-deep-learning</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-4-01-understanding-deep-learning</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-5-02-pytorch-basics</loc>
+  </url>
 </urlset>

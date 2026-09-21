@@ -11,6 +11,7 @@ project:
         - file: Laboratory Task 3 (01_Understanding Deep Learning).ipynb
         - file: Laboratory Task 4 (01_Understanding Deep Learning).ipynb
         - file: Laboratory Task 5 (02_PyTorch Basics).ipynb
+        - file: Laboratory Task 6 (E1 - CNN Implementation).ipynb
 
   # description:
   # keywords: []

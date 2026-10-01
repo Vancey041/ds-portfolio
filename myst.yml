@@ -1,23 +1,23 @@
-# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
   id: f0fbd370-ad98-4e75-8fdc-8f3ebb6a1ad2
   title: Personal Portfolio
   toc:
     - file: intro.md
+      title: Home
     - file: notebooks.md
+      title: My Laboratory Tasks
       children:
         - file: Laboratory Task 2 (01_Understanding Deep Learning).ipynb
+          title: "Task 2: Understanding Deep Learning"
         - file: Laboratory Task 3 (01_Understanding Deep Learning).ipynb
+          title: "Task 3: Understanding Deep Learning"
         - file: Laboratory Task 4 (01_Understanding Deep Learning).ipynb
+          title: "Task 4: Understanding Deep Learning"
         - file: Laboratory Task 5 (02_PyTorch Basics).ipynb
+          title: "Task 5: PyTorch Basics"
         - file: Laboratory Task 6 (E1 - CNN Implementation).ipynb
-
-  # description:
-  # keywords: []
-  # authors: []
-  # github:
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+          title: "Task 6: CNN Implementation"
 site:
   options:
     style: custom.css

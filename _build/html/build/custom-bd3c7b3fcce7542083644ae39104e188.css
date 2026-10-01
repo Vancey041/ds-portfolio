@@ -1,0 +1,774 @@
+/* =========================================================
+   PYBOOK — MINIMAL WHITE NOTEBOOK THEME
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL PAGE
+   ========================================================= */
+
+html,
+body,
+main {
+    background-color: #ffffff !important;
+
+    background-image:
+        url('https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp11410778.jpg&sp=1789789429T338864733acca87c0eff983bb202d686f01cbf3b7ecf92bf9b846be4b1adb0fd') !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+
+    color: #1f2937 !important;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif !important;
+}
+
+
+/* =========================================================
+   2. GLOBAL TEXT
+   ========================================================= */
+
+body {
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   3. HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111827 !important;
+}
+
+
+/* Main title */
+
+h1 {
+    display: inline-block !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: -0.02em !important;
+}
+
+
+/* =========================================================
+   4. REMOVE OLD TITLE ANIMATION
+   ========================================================= */
+
+/*
+   No distracting animation for the minimal theme.
+*/
+
+
+/* =========================================================
+   5. NOTEBOOK CELLS
+   ========================================================= */
+
+html body .cell,
+html body .cell_input,
+html body .cell_output,
+html body .text_cell,
+html body .text_cell_render,
+html body .input_area,
+html body .output_area,
+html body .output_wrapper,
+html body .highlight,
+html body .highlight pre,
+
+html body .jp-Cell,
+html body .jp-CodeCell,
+html body .jp-MarkdownCell,
+html body .jp-InputArea,
+html body .jp-OutputArea,
+html body .jp-RenderedMarkdown,
+html body .jp-RenderedHTMLCommon {
+
+    background: #ffffff !important;
+
+    background-color: #ffffff !important;
+
+    background-image: none !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   6. NOTEBOOK CELL CARDS
+   ========================================================= */
+
+html body .cell {
+
+    border-radius: 8px !important;
+
+    padding: 16px !important;
+
+    margin-top: 12px !important;
+
+    margin-bottom: 20px !important;
+
+    box-sizing: border-box !important;
+
+    border:
+        1px solid #e5e7eb !important;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+
+/* =========================================================
+   7. JUPYTERLAB CELL STYLE
+   ========================================================= */
+
+html body .jp-Cell {
+
+    background: #ffffff !important;
+
+    border-radius: 8px !important;
+
+    margin-top: 10px !important;
+
+    margin-bottom: 16px !important;
+
+    padding: 10px !important;
+
+    border:
+        1px solid #e5e7eb !important;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+
+/* =========================================================
+   8. MARKDOWN CELLS
+   ========================================================= */
+
+html body .text_cell,
+html body .text_cell_render,
+html body .jp-MarkdownCell,
+html body .jp-RenderedMarkdown,
+html body .jp-RenderedHTMLCommon {
+
+    background: #ffffff !important;
+
+    background-color: #ffffff !important;
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   9. MARKDOWN TEXT
+   ========================================================= */
+
+html body .text_cell_render p,
+html body .text_cell_render li,
+html body .text_cell_render span,
+html body .text_cell_render div,
+
+html body .jp-RenderedMarkdown p,
+html body .jp-RenderedMarkdown li,
+html body .jp-RenderedMarkdown span,
+html body .jp-RenderedMarkdown div {
+
+    color: #1f2937 !important;
+
+    line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   10. MARKDOWN HEADINGS
+   ========================================================= */
+
+html body .text_cell_render h1,
+html body .text_cell_render h2,
+html body .text_cell_render h3,
+html body .text_cell_render h4,
+html body .text_cell_render h5,
+html body .text_cell_render h6,
+
+html body .jp-RenderedMarkdown h1,
+html body .jp-RenderedMarkdown h2,
+html body .jp-RenderedMarkdown h3,
+html body .jp-RenderedMarkdown h4,
+html body .jp-RenderedMarkdown h5,
+html body .jp-RenderedMarkdown h6 {
+
+    background: #ffffff !important;
+
+    color: #111827 !important;
+
+    font-weight: 650 !important;
+}
+
+
+/* =========================================================
+   11. MARKDOWN LINKS
+   ========================================================= */
+
+html body .text_cell_render a,
+html body .jp-RenderedMarkdown a {
+
+    color: #2563eb !important;
+
+    background: transparent !important;
+
+    text-decoration: none !important;
+}
+
+
+html body .text_cell_render a:hover,
+html body .jp-RenderedMarkdown a:hover {
+
+    text-decoration: underline !important;
+}
+
+
+/* =========================================================
+   12. INLINE CODE
+   ========================================================= */
+
+html body .text_cell_render code,
+html body .jp-RenderedMarkdown code {
+
+    background: #f3f4f6 !important;
+
+    background-color: #f3f4f6 !important;
+
+    color: #374151 !important;
+
+    padding: 2px 6px !important;
+
+    border-radius: 4px !important;
+
+    border:
+        1px solid #e5e7eb !important;
+
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace !important;
+}
+
+
+/* =========================================================
+   13. CODE CELLS
+   ========================================================= */
+
+html body .cell_input,
+html body .input_area,
+html body .highlight,
+html body .highlight pre,
+
+html body .jp-CodeCell,
+html body .jp-InputArea {
+
+    background: #ffffff !important;
+
+    background-color: #ffffff !important;
+
+    background-image: none !important;
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   14. CODE BLOCKS
+   ========================================================= */
+
+html body pre,
+html body .highlight pre,
+html body .input_area pre,
+html body .jp-InputArea pre {
+
+    background: #ffffff !important;
+
+    background-color: #ffffff !important;
+
+    background-image: none !important;
+
+    color: #1f2937 !important;
+
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace !important;
+
+    line-height: 1.6 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   15. CODE TEXT
+   ========================================================= */
+
+html body .highlight pre,
+html body .highlight pre code,
+html body .input_area pre,
+html body .input_area code {
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   16. SYNTAX HIGHLIGHTING
+   ========================================================= */
+
+/* Comments */
+
+html body .highlight .c,
+html body .highlight .c1,
+html body .highlight .cm {
+
+    color: #6b7280 !important;
+}
+
+
+/* Keywords */
+
+html body .highlight .k,
+html body .highlight .kc,
+html body .highlight .kd,
+html body .highlight .kn,
+html body .highlight .kp,
+html body .highlight .kr {
+
+    color: #7c3aed !important;
+}
+
+
+/* Strings */
+
+html body .highlight .s,
+html body .highlight .s1,
+html body .highlight .s2,
+html body .highlight .sa,
+html body .highlight .sb {
+
+    color: #15803d !important;
+}
+
+
+/* Numbers */
+
+html body .highlight .m,
+html body .highlight .mf,
+html body .highlight .mi,
+html body .highlight .mo {
+
+    color: #2563eb !important;
+}
+
+
+/* Functions */
+
+html body .highlight .nf,
+html body .highlight .fm {
+
+    color: #dc2626 !important;
+}
+
+
+/* Built-ins */
+
+html body .highlight .nb {
+
+    color: #0369a1 !important;
+}
+
+
+/* =========================================================
+   17. OUTPUT CELLS
+   ========================================================= */
+
+html body .cell_output,
+html body .output_area,
+html body .output_wrapper,
+
+html body .jp-OutputArea,
+html body .jp-OutputArea-output {
+
+    background: #ffffff !important;
+
+    background-color: #ffffff !important;
+
+    background-image: none !important;
+
+    color: #1f2937 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   18. OUTPUT TEXT
+   ========================================================= */
+
+html body .cell_output *,
+html body .output_area *,
+html body .output_wrapper *,
+html body .jp-OutputArea-output * {
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   19. OUTPUT PRE
+   ========================================================= */
+
+html body .cell_output pre,
+html body .output_area pre,
+html body .jp-OutputArea-output pre {
+
+    background: #ffffff !important;
+
+    background-color: #ffffff !important;
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   20. DATAFRAME
+   ========================================================= */
+
+html body .dataframe {
+
+    background: #ffffff !important;
+
+    color: #1f2937 !important;
+
+    border-collapse: collapse !important;
+
+    border:
+        1px solid #e5e7eb !important;
+}
+
+
+html body .dataframe th {
+
+    background: #f9fafb !important;
+
+    color: #111827 !important;
+
+    border:
+        1px solid #e5e7eb !important;
+
+    padding: 8px !important;
+
+    font-weight: 600 !important;
+}
+
+
+html body .dataframe td {
+
+    background: #ffffff !important;
+
+    color: #1f2937 !important;
+
+    border:
+        1px solid #e5e7eb !important;
+
+    padding: 8px !important;
+}
+
+
+/* =========================================================
+   21. MARKDOWN TABLES
+   ========================================================= */
+
+html body .text_cell_render table,
+html body .cell_output table,
+html body .output_area table,
+html body .jp-RenderedMarkdown table {
+
+    background: #ffffff !important;
+
+    color: #1f2937 !important;
+
+    border-collapse: collapse !important;
+}
+
+
+html body .text_cell_render th,
+html body .text_cell_render td,
+html body .cell_output th,
+html body .cell_output td,
+html body .output_area th,
+html body .output_area td,
+html body .jp-RenderedMarkdown th,
+html body .jp-RenderedMarkdown td {
+
+    color: #1f2937 !important;
+
+    border:
+        1px solid #e5e7eb !important;
+
+    padding: 8px !important;
+}
+
+
+html body .text_cell_render th,
+html body .jp-RenderedMarkdown th {
+
+    background: #f9fafb !important;
+
+    color: #111827 !important;
+}
+
+
+/* =========================================================
+   22. BLOCKQUOTES
+   ========================================================= */
+
+html body .text_cell_render blockquote,
+html body .jp-RenderedMarkdown blockquote {
+
+    background: #f9fafb !important;
+
+    color: #4b5563 !important;
+
+    border-left:
+        3px solid #d1d5db !important;
+
+    padding:
+        8px 14px !important;
+
+    border-radius:
+        4px !important;
+}
+
+
+/* =========================================================
+   23. LISTS
+   ========================================================= */
+
+html body .text_cell_render ul,
+html body .text_cell_render ol,
+html body .jp-RenderedMarkdown ul,
+html body .jp-RenderedMarkdown ol {
+
+    background: #ffffff !important;
+
+    color: #1f2937 !important;
+}
+
+
+html body .text_cell_render li,
+html body .jp-RenderedMarkdown li {
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   24. IMAGES
+   ========================================================= */
+
+html body .text_cell_render img,
+html body .cell_output img,
+html body .output_area img,
+html body .jp-RenderedMarkdown img {
+
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   25. MATH / LATEX
+   ========================================================= */
+
+html body .MathJax,
+html body .MathJax_Display,
+html body .MathJax_SVG,
+html body mjx-container {
+
+    background: #ffffff !important;
+
+    color: #1f2937 !important;
+}
+
+
+/* =========================================================
+   26. NOTEBOOK PROMPTS
+   ========================================================= */
+
+html body .prompt,
+html body .input_prompt,
+html body .output_prompt {
+
+    color: #9ca3af !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   27. HORIZONTAL RULES
+   ========================================================= */
+
+html body .text_cell_render hr,
+html body .jp-RenderedMarkdown hr {
+
+    border: 0 !important;
+
+    border-top:
+        1px solid #e5e7eb !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   28. REMOVE DARK NOTEBOOK BACKGROUNDS
+   ========================================================= */
+
+html body .cell *,
+html body .jp-Cell * {
+
+    background-image: none !important;
+}
+
+
+/* =========================================================
+   29. FINAL WHITE NOTEBOOK OVERRIDE
+   ========================================================= */
+
+html body .cell,
+html body .text_cell,
+html body .cell_input,
+html body .cell_output,
+html body .text_cell_render,
+html body .input_area,
+html body .output_area,
+html body .highlight,
+html body .highlight pre,
+
+html body .jp-Cell,
+html body .jp-CodeCell,
+html body .jp-MarkdownCell,
+html body .jp-InputArea,
+html body .jp-OutputArea {
+
+    background-color: #ffffff !important;
+}
+
+
+/* =========================================================
+   30. FINAL READABILITY
+   ========================================================= */
+
+html body .text_cell_render,
+html body .text_cell_render p,
+html body .text_cell_render li,
+html body .text_cell_render td,
+html body .text_cell_render th,
+
+html body .jp-RenderedMarkdown,
+html body .jp-RenderedMarkdown p,
+html body .jp-RenderedMarkdown li,
+html body .jp-RenderedMarkdown td,
+html body .jp-RenderedMarkdown th {
+
+    color: #1f2937 !important;
+}
+
+
+html body .input_area,
+html body .input_area pre,
+html body .input_area code,
+html body .highlight pre {
+
+    color: #1f2937 !important;
+}
+
+
+html body .cell_output,
+html body .cell_output pre,
+html body .output_area,
+html body .output_area pre {
+
+    color: #1f2937 !important;
+}
+
+/* =========================================================
+   31. PROFILE PICTURE (UPPER RIGHT OVAL)
+   ========================================================= */
+
+.profile-pic {
+    float: right;              /* Pushes the image to the right side */
+    width: 160px;              /* Adjust width as needed */
+    height: 200px;             /* Height > Width creates the oval shape */
+    margin: 10px 0 20px 30px;  /* Adds breathing room around the image */
+    border-radius: 50%;        /* Creates the oval/circular frame */
+    object-fit: cover;         /* Ensures your photo isn't stretched */
+    border: 3px solid #2563eb !important; /* Professional blue border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Slight zoom and shadow increase when you hover over your picture */
+.profile-pic:hover {
+    transform: translateY(-5px) scale(1.02) !important;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Clear the float so it doesn't mess up layout on smaller screens */
+h2 {
+    clear: none;
+}
+
+/* =========================================================
+   32. ANIMATED BUTTONS
+   ========================================================= */
+
+.custom-btn {
+    display: inline-block !important;
+    background-color: #2563eb !important; /* Matches the image border */
+    color: #ffffff !important;
+    padding: 12px 24px !important;
+    border-radius: 30px !important;       /* Pill-shaped button */
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 1.05em !important;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2) !important;
+    transition: all 0.3s ease !important; /* Smooth animation timing */
+}
+
+/* Button hover animation: Moves up slightly, darkens, shadow expands */
+.custom-btn:hover {
+    background-color: #1d4ed8 !important; 
+    transform: translateY(-3px) !important; 
+    box-shadow: 0 8px 15px rgba(37, 99, 235, 0.35) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}

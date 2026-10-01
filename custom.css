@@ -1,5 +1,5 @@
 /* =========================================================
-   PYBOOK — MINIMAL WHITE NOTEBOOK THEME
+   PERSONAL PORTFOLIO — CLEAN NOTEBOOK THEME
    ========================================================= */
 
 
@@ -8,17 +8,8 @@
    ========================================================= */
 
 html,
-body,
-main {
+body {
     background-color: #ffffff !important;
-
-    background-image:
-        url('https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp11410778.jpg&sp=1789789429T338864733acca87c0eff983bb202d686f01cbf3b7ecf92bf9b846be4b1adb0fd') !important;
-
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-
     color: #1f2937 !important;
 
     font-family:
@@ -33,7 +24,26 @@ main {
 
 
 /* =========================================================
-   2. GLOBAL TEXT
+   2. BACKGROUND IMAGE
+   ========================================================= */
+
+/*
+   The background image is loaded directly from the URL.
+   You do NOT need a background.jpg file in your repository.
+*/
+
+body {
+    background-image: url("https://wallpapercave.com/wp/wp11410778.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+
+/* =========================================================
+   3. GLOBAL TEXT
    ========================================================= */
 
 body {
@@ -42,7 +52,7 @@ body {
 
 
 /* =========================================================
-   3. HEADINGS
+   4. HEADINGS
    ========================================================= */
 
 h1,
@@ -54,140 +64,91 @@ h6 {
     color: #111827 !important;
 }
 
-
-/* Main title */
-
 h1 {
-    display: inline-block !important;
-
     font-weight: 700 !important;
-
     letter-spacing: -0.02em !important;
 }
 
-
-/* =========================================================
-   4. REMOVE OLD TITLE ANIMATION
-   ========================================================= */
-
-/*
-   No distracting animation for the minimal theme.
-*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 650 !important;
+}
 
 
 /* =========================================================
    5. NOTEBOOK CELLS
    ========================================================= */
 
-html body .cell,
-html body .cell_input,
-html body .cell_output,
-html body .text_cell,
-html body .text_cell_render,
-html body .input_area,
-html body .output_area,
-html body .output_wrapper,
-html body .highlight,
-html body .highlight pre,
-
-html body .jp-Cell,
-html body .jp-CodeCell,
-html body .jp-MarkdownCell,
-html body .jp-InputArea,
-html body .jp-OutputArea,
-html body .jp-RenderedMarkdown,
-html body .jp-RenderedHTMLCommon {
-
+.cell,
+.jp-Cell {
     background: #ffffff !important;
-
     background-color: #ffffff !important;
-
     background-image: none !important;
 
-    opacity: 1 !important;
-}
-
-
-/* =========================================================
-   6. NOTEBOOK CELL CARDS
-   ========================================================= */
-
-html body .cell {
+    border: 1px solid #e5e7eb !important;
 
     border-radius: 8px !important;
-
-    padding: 16px !important;
-
-    margin-top: 12px !important;
-
-    margin-bottom: 20px !important;
 
     box-sizing: border-box !important;
 
-    border:
-        1px solid #e5e7eb !important;
-
     box-shadow:
         0 2px 8px rgba(0, 0, 0, 0.04) !important;
 }
 
 
-/* =========================================================
-   7. JUPYTERLAB CELL STYLE
-   ========================================================= */
+/* Classic notebook cells */
 
-html body .jp-Cell {
+.cell {
+    padding: 16px !important;
 
-    background: #ffffff !important;
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+}
 
-    border-radius: 8px !important;
 
-    margin-top: 10px !important;
+/* JupyterLab-style cells */
 
-    margin-bottom: 16px !important;
-
+.jp-Cell {
     padding: 10px !important;
 
-    border:
-        1px solid #e5e7eb !important;
-
-    box-shadow:
-        0 2px 8px rgba(0, 0, 0, 0.04) !important;
+    margin-top: 10px !important;
+    margin-bottom: 16px !important;
 }
 
 
 /* =========================================================
-   8. MARKDOWN CELLS
+   6. MARKDOWN CELLS
    ========================================================= */
 
-html body .text_cell,
-html body .text_cell_render,
-html body .jp-MarkdownCell,
-html body .jp-RenderedMarkdown,
-html body .jp-RenderedHTMLCommon {
-
+.text_cell,
+.text_cell_render,
+.jp-MarkdownCell,
+.jp-RenderedMarkdown,
+.jp-RenderedHTMLCommon {
     background: #ffffff !important;
-
     background-color: #ffffff !important;
 
     color: #1f2937 !important;
 }
 
 
-/* =========================================================
-   9. MARKDOWN TEXT
-   ========================================================= */
+/* Markdown paragraphs */
 
-html body .text_cell_render p,
-html body .text_cell_render li,
-html body .text_cell_render span,
-html body .text_cell_render div,
+.text_cell_render p,
+.jp-RenderedMarkdown p {
+    color: #1f2937 !important;
 
-html body .jp-RenderedMarkdown p,
-html body .jp-RenderedMarkdown li,
-html body .jp-RenderedMarkdown span,
-html body .jp-RenderedMarkdown div {
+    line-height: 1.7 !important;
+}
 
+
+/* Markdown lists */
+
+.text_cell_render li,
+.jp-RenderedMarkdown li {
     color: #1f2937 !important;
 
     line-height: 1.7 !important;
@@ -195,23 +156,22 @@ html body .jp-RenderedMarkdown div {
 
 
 /* =========================================================
-   10. MARKDOWN HEADINGS
+   7. MARKDOWN HEADINGS
    ========================================================= */
 
-html body .text_cell_render h1,
-html body .text_cell_render h2,
-html body .text_cell_render h3,
-html body .text_cell_render h4,
-html body .text_cell_render h5,
-html body .text_cell_render h6,
+.text_cell_render h1,
+.text_cell_render h2,
+.text_cell_render h3,
+.text_cell_render h4,
+.text_cell_render h5,
+.text_cell_render h6,
 
-html body .jp-RenderedMarkdown h1,
-html body .jp-RenderedMarkdown h2,
-html body .jp-RenderedMarkdown h3,
-html body .jp-RenderedMarkdown h4,
-html body .jp-RenderedMarkdown h5,
-html body .jp-RenderedMarkdown h6 {
-
+.jp-RenderedMarkdown h1,
+.jp-RenderedMarkdown h2,
+.jp-RenderedMarkdown h3,
+.jp-RenderedMarkdown h4,
+.jp-RenderedMarkdown h5,
+.jp-RenderedMarkdown h6 {
     background: #ffffff !important;
 
     color: #111827 !important;
@@ -221,12 +181,11 @@ html body .jp-RenderedMarkdown h6 {
 
 
 /* =========================================================
-   11. MARKDOWN LINKS
+   8. LINKS
    ========================================================= */
 
-html body .text_cell_render a,
-html body .jp-RenderedMarkdown a {
-
+.text_cell_render a,
+.jp-RenderedMarkdown a {
     color: #2563eb !important;
 
     background: transparent !important;
@@ -235,22 +194,23 @@ html body .jp-RenderedMarkdown a {
 }
 
 
-html body .text_cell_render a:hover,
-html body .jp-RenderedMarkdown a:hover {
+/* Link hover */
+
+.text_cell_render a:hover,
+.jp-RenderedMarkdown a:hover {
+    color: #1d4ed8 !important;
 
     text-decoration: underline !important;
 }
 
 
 /* =========================================================
-   12. INLINE CODE
+   9. INLINE CODE
    ========================================================= */
 
-html body .text_cell_render code,
-html body .jp-RenderedMarkdown code {
-
+.text_cell_render code,
+.jp-RenderedMarkdown code {
     background: #f3f4f6 !important;
-
     background-color: #f3f4f6 !important;
 
     color: #374151 !important;
@@ -259,8 +219,7 @@ html body .jp-RenderedMarkdown code {
 
     border-radius: 4px !important;
 
-    border:
-        1px solid #e5e7eb !important;
+    border: 1px solid #e5e7eb !important;
 
     font-family:
         "SFMono-Regular",
@@ -271,17 +230,16 @@ html body .jp-RenderedMarkdown code {
 
 
 /* =========================================================
-   13. CODE CELLS
+   10. CODE CELLS
    ========================================================= */
 
-html body .cell_input,
-html body .input_area,
-html body .highlight,
-html body .highlight pre,
+.cell_input,
+.input_area,
+.highlight,
+.highlight pre,
 
-html body .jp-CodeCell,
-html body .jp-InputArea {
-
+.jp-CodeCell,
+.jp-InputArea {
     background: #ffffff !important;
 
     background-color: #ffffff !important;
@@ -293,14 +251,13 @@ html body .jp-InputArea {
 
 
 /* =========================================================
-   14. CODE BLOCKS
+   11. CODE BLOCKS
    ========================================================= */
 
-html body pre,
-html body .highlight pre,
-html body .input_area pre,
-html body .jp-InputArea pre {
-
+pre,
+.highlight pre,
+.input_area pre,
+.jp-InputArea pre {
     background: #ffffff !important;
 
     background-color: #ffffff !important;
@@ -321,97 +278,87 @@ html body .jp-InputArea pre {
 }
 
 
-/* =========================================================
-   15. CODE TEXT
-   ========================================================= */
+/* Code text */
 
-html body .highlight pre,
-html body .highlight pre code,
-html body .input_area pre,
-html body .input_area code {
-
+.highlight pre code,
+.input_area pre code,
+.input_area code {
     color: #1f2937 !important;
 }
 
 
 /* =========================================================
-   16. SYNTAX HIGHLIGHTING
+   12. SYNTAX HIGHLIGHTING
    ========================================================= */
+
 
 /* Comments */
 
-html body .highlight .c,
-html body .highlight .c1,
-html body .highlight .cm {
-
+.highlight .c,
+.highlight .c1,
+.highlight .cm {
     color: #6b7280 !important;
 }
 
 
 /* Keywords */
 
-html body .highlight .k,
-html body .highlight .kc,
-html body .highlight .kd,
-html body .highlight .kn,
-html body .highlight .kp,
-html body .highlight .kr {
-
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr {
     color: #7c3aed !important;
 }
 
 
 /* Strings */
 
-html body .highlight .s,
-html body .highlight .s1,
-html body .highlight .s2,
-html body .highlight .sa,
-html body .highlight .sb {
-
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sa,
+.highlight .sb {
     color: #15803d !important;
 }
 
 
 /* Numbers */
 
-html body .highlight .m,
-html body .highlight .mf,
-html body .highlight .mi,
-html body .highlight .mo {
-
+.highlight .m,
+.highlight .mf,
+.highlight .mi,
+.highlight .mo {
     color: #2563eb !important;
 }
 
 
 /* Functions */
 
-html body .highlight .nf,
-html body .highlight .fm {
-
+.highlight .nf,
+.highlight .fm {
     color: #dc2626 !important;
 }
 
 
 /* Built-ins */
 
-html body .highlight .nb {
-
+.highlight .nb {
     color: #0369a1 !important;
 }
 
 
 /* =========================================================
-   17. OUTPUT CELLS
+   13. OUTPUT CELLS
    ========================================================= */
 
-html body .cell_output,
-html body .output_area,
-html body .output_wrapper,
+.cell_output,
+.output_area,
+.output_wrapper,
 
-html body .jp-OutputArea,
-html body .jp-OutputArea-output {
-
+.jp-OutputArea,
+.jp-OutputArea-output {
     background: #ffffff !important;
 
     background-color: #ffffff !important;
@@ -424,27 +371,23 @@ html body .jp-OutputArea-output {
 }
 
 
-/* =========================================================
-   18. OUTPUT TEXT
-   ========================================================= */
+/* Output text */
 
-html body .cell_output *,
-html body .output_area *,
-html body .output_wrapper *,
-html body .jp-OutputArea-output * {
-
+.cell_output *,
+.output_area *,
+.output_wrapper *,
+.jp-OutputArea-output * {
     color: #1f2937 !important;
 }
 
 
 /* =========================================================
-   19. OUTPUT PRE
+   14. OUTPUT PRE
    ========================================================= */
 
-html body .cell_output pre,
-html body .output_area pre,
-html body .jp-OutputArea-output pre {
-
+.cell_output pre,
+.output_area pre,
+.jp-OutputArea-output pre {
     background: #ffffff !important;
 
     background-color: #ffffff !important;
@@ -454,30 +397,28 @@ html body .jp-OutputArea-output pre {
 
 
 /* =========================================================
-   20. DATAFRAME
+   15. DATAFRAME
    ========================================================= */
 
-html body .dataframe {
-
+.dataframe {
     background: #ffffff !important;
 
     color: #1f2937 !important;
 
     border-collapse: collapse !important;
 
-    border:
-        1px solid #e5e7eb !important;
+    border: 1px solid #e5e7eb !important;
 }
 
 
-html body .dataframe th {
+/* DataFrame header */
 
+.dataframe th {
     background: #f9fafb !important;
 
     color: #111827 !important;
 
-    border:
-        1px solid #e5e7eb !important;
+    border: 1px solid #e5e7eb !important;
 
     padding: 8px !important;
 
@@ -485,28 +426,27 @@ html body .dataframe th {
 }
 
 
-html body .dataframe td {
+/* DataFrame cells */
 
+.dataframe td {
     background: #ffffff !important;
 
     color: #1f2937 !important;
 
-    border:
-        1px solid #e5e7eb !important;
+    border: 1px solid #e5e7eb !important;
 
     padding: 8px !important;
 }
 
 
 /* =========================================================
-   21. MARKDOWN TABLES
+   16. MARKDOWN TABLES
    ========================================================= */
 
-html body .text_cell_render table,
-html body .cell_output table,
-html body .output_area table,
-html body .jp-RenderedMarkdown table {
-
+.text_cell_render table,
+.cell_output table,
+.output_area table,
+.jp-RenderedMarkdown table {
     background: #ffffff !important;
 
     color: #1f2937 !important;
@@ -515,86 +455,80 @@ html body .jp-RenderedMarkdown table {
 }
 
 
-html body .text_cell_render th,
-html body .text_cell_render td,
-html body .cell_output th,
-html body .cell_output td,
-html body .output_area th,
-html body .output_area td,
-html body .jp-RenderedMarkdown th,
-html body .jp-RenderedMarkdown td {
+/* Table cells */
 
+.text_cell_render th,
+.text_cell_render td,
+
+.cell_output th,
+.cell_output td,
+
+.output_area th,
+.output_area td,
+
+.jp-RenderedMarkdown th,
+.jp-RenderedMarkdown td {
     color: #1f2937 !important;
 
-    border:
-        1px solid #e5e7eb !important;
+    border: 1px solid #e5e7eb !important;
 
     padding: 8px !important;
 }
 
 
-html body .text_cell_render th,
-html body .jp-RenderedMarkdown th {
+/* Table headers */
 
+.text_cell_render th,
+.jp-RenderedMarkdown th {
     background: #f9fafb !important;
 
     color: #111827 !important;
+
+    font-weight: 600 !important;
 }
 
 
 /* =========================================================
-   22. BLOCKQUOTES
+   17. BLOCKQUOTES
    ========================================================= */
 
-html body .text_cell_render blockquote,
-html body .jp-RenderedMarkdown blockquote {
-
+.text_cell_render blockquote,
+.jp-RenderedMarkdown blockquote {
     background: #f9fafb !important;
 
     color: #4b5563 !important;
 
-    border-left:
-        3px solid #d1d5db !important;
+    border-left: 3px solid #d1d5db !important;
 
-    padding:
-        8px 14px !important;
+    padding: 8px 14px !important;
 
-    border-radius:
-        4px !important;
+    border-radius: 4px !important;
 }
 
 
 /* =========================================================
-   23. LISTS
+   18. LISTS
    ========================================================= */
 
-html body .text_cell_render ul,
-html body .text_cell_render ol,
-html body .jp-RenderedMarkdown ul,
-html body .jp-RenderedMarkdown ol {
+.text_cell_render ul,
+.text_cell_render ol,
 
+.jp-RenderedMarkdown ul,
+.jp-RenderedMarkdown ol {
     background: #ffffff !important;
 
     color: #1f2937 !important;
 }
 
 
-html body .text_cell_render li,
-html body .jp-RenderedMarkdown li {
-
-    color: #1f2937 !important;
-}
-
-
 /* =========================================================
-   24. IMAGES
+   19. IMAGES
    ========================================================= */
 
-html body .text_cell_render img,
-html body .cell_output img,
-html body .output_area img,
-html body .jp-RenderedMarkdown img {
-
+.text_cell_render img,
+.cell_output img,
+.output_area img,
+.jp-RenderedMarkdown img {
     max-width: 100% !important;
 
     height: auto !important;
@@ -604,14 +538,13 @@ html body .jp-RenderedMarkdown img {
 
 
 /* =========================================================
-   25. MATH / LATEX
+   20. MATH / LATEX
    ========================================================= */
 
-html body .MathJax,
-html body .MathJax_Display,
-html body .MathJax_SVG,
-html body mjx-container {
-
+.MathJax,
+.MathJax_Display,
+.MathJax_SVG,
+mjx-container {
     background: #ffffff !important;
 
     color: #1f2937 !important;
@@ -619,13 +552,12 @@ html body mjx-container {
 
 
 /* =========================================================
-   26. NOTEBOOK PROMPTS
+   21. NOTEBOOK PROMPTS
    ========================================================= */
 
-html body .prompt,
-html body .input_prompt,
-html body .output_prompt {
-
+.prompt,
+.input_prompt,
+.output_prompt {
     color: #9ca3af !important;
 
     background: transparent !important;
@@ -633,142 +565,163 @@ html body .output_prompt {
 
 
 /* =========================================================
-   27. HORIZONTAL RULES
+   22. HORIZONTAL RULES
    ========================================================= */
 
-html body .text_cell_render hr,
-html body .jp-RenderedMarkdown hr {
-
+.text_cell_render hr,
+.jp-RenderedMarkdown hr {
     border: 0 !important;
 
-    border-top:
-        1px solid #e5e7eb !important;
+    border-top: 1px solid #e5e7eb !important;
 
     background: transparent !important;
 }
 
 
 /* =========================================================
-   28. REMOVE DARK NOTEBOOK BACKGROUNDS
-   ========================================================= */
-
-html body .cell *,
-html body .jp-Cell * {
-
-    background-image: none !important;
-}
-
-
-/* =========================================================
-   29. FINAL WHITE NOTEBOOK OVERRIDE
-   ========================================================= */
-
-html body .cell,
-html body .text_cell,
-html body .cell_input,
-html body .cell_output,
-html body .text_cell_render,
-html body .input_area,
-html body .output_area,
-html body .highlight,
-html body .highlight pre,
-
-html body .jp-Cell,
-html body .jp-CodeCell,
-html body .jp-MarkdownCell,
-html body .jp-InputArea,
-html body .jp-OutputArea {
-
-    background-color: #ffffff !important;
-}
-
-
-/* =========================================================
-   30. FINAL READABILITY
-   ========================================================= */
-
-html body .text_cell_render,
-html body .text_cell_render p,
-html body .text_cell_render li,
-html body .text_cell_render td,
-html body .text_cell_render th,
-
-html body .jp-RenderedMarkdown,
-html body .jp-RenderedMarkdown p,
-html body .jp-RenderedMarkdown li,
-html body .jp-RenderedMarkdown td,
-html body .jp-RenderedMarkdown th {
-
-    color: #1f2937 !important;
-}
-
-
-html body .input_area,
-html body .input_area pre,
-html body .input_area code,
-html body .highlight pre {
-
-    color: #1f2937 !important;
-}
-
-
-html body .cell_output,
-html body .cell_output pre,
-html body .output_area,
-html body .output_area pre {
-
-    color: #1f2937 !important;
-}
-
-/* =========================================================
-   31. PROFILE PICTURE (UPPER RIGHT OVAL)
+   23. PROFILE PICTURE
    ========================================================= */
 
 .profile-pic {
-    float: right;              /* Pushes the image to the right side */
-    width: 160px;              /* Adjust width as needed */
-    height: 200px;             /* Height > Width creates the oval shape */
-    margin: 10px 0 20px 30px;  /* Adds breathing room around the image */
-    border-radius: 50%;        /* Creates the oval/circular frame */
-    object-fit: cover;         /* Ensures your photo isn't stretched */
-    border: 3px solid #2563eb !important; /* Professional blue border */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    float: right;
+
+    width: 160px;
+
+    height: 200px;
+
+    margin:
+        10px
+        0
+        20px
+        30px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #2563eb !important;
+
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.1) !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease !important;
 }
 
-/* Slight zoom and shadow increase when you hover over your picture */
+
+/* Profile picture hover */
+
 .profile-pic:hover {
-    transform: translateY(-5px) scale(1.02) !important;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15) !important;
+    transform:
+        translateY(-5px)
+        scale(1.02) !important;
+
+    box-shadow:
+        0 12px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Clear the float so it doesn't mess up layout on smaller screens */
-h2 {
-    clear: none;
-}
 
 /* =========================================================
-   32. ANIMATED BUTTONS
+   24. CUSTOM BUTTONS
    ========================================================= */
 
 .custom-btn {
     display: inline-block !important;
-    background-color: #2563eb !important; /* Matches the image border */
+
+    background-color: #2563eb !important;
+
     color: #ffffff !important;
+
     padding: 12px 24px !important;
-    border-radius: 30px !important;       /* Pill-shaped button */
+
+    border-radius: 30px !important;
+
     text-decoration: none !important;
+
     font-weight: 600 !important;
+
     font-size: 1.05em !important;
-    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2) !important;
-    transition: all 0.3s ease !important; /* Smooth animation timing */
+
+    box-shadow:
+        0 4px 6px rgba(37, 99, 235, 0.2) !important;
+
+    transition:
+        all 0.3s ease !important;
 }
 
-/* Button hover animation: Moves up slightly, darkens, shadow expands */
+
+/* Button hover */
+
 .custom-btn:hover {
-    background-color: #1d4ed8 !important; 
-    transform: translateY(-3px) !important; 
-    box-shadow: 0 8px 15px rgba(37, 99, 235, 0.35) !important;
+    background-color: #1d4ed8 !important;
+
+    transform:
+        translateY(-3px) !important;
+
+    box-shadow:
+        0 8px 15px rgba(37, 99, 235, 0.35) !important;
+
     color: #ffffff !important;
+
     text-decoration: none !important;
+}
+
+
+/* =========================================================
+   25. RESPONSIVE PROFILE PICTURE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .profile-pic {
+        float: none;
+
+        display: block;
+
+        width: 140px;
+
+        height: 170px;
+
+        margin:
+            0
+            auto
+            20px
+            auto;
+    }
+}
+
+
+/* =========================================================
+   26. FINAL READABILITY OVERRIDES
+   ========================================================= */
+
+.text_cell_render,
+.text_cell_render p,
+.text_cell_render li,
+.text_cell_render td,
+.text_cell_render th,
+
+.jp-RenderedMarkdown,
+.jp-RenderedMarkdown p,
+.jp-RenderedMarkdown li,
+.jp-RenderedMarkdown td,
+.jp-RenderedMarkdown th {
+    color: #1f2937 !important;
+}
+
+
+.input_area,
+.input_area pre,
+.input_area code,
+.highlight pre {
+    color: #1f2937 !important;
+}
+
+
+.cell_output,
+.cell_output pre,
+.output_area,
+.output_area pre {
+    color: #1f2937 !important;
 }

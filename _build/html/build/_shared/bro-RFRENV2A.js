@@ -1,1 +1,1 @@
-import{a}from"/build/_shared/chunk-3LSXFKEB.js";import"/build/_shared/chunk-RAQ24GF6.js";export default a();
+import{a}from"/ds-portfolio/build/_shared/chunk-3LSXFKEB.js";import"/ds-portfolio/build/_shared/chunk-RAQ24GF6.js";export default a();

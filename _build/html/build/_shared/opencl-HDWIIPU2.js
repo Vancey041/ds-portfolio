@@ -1,1 +1,1 @@
-import{a}from"/build/_shared/chunk-TTULAAAM.js";import"/build/_shared/chunk-W5F6WS2S.js";import"/build/_shared/chunk-RAQ24GF6.js";export default a();
+import{a}from"/ds-portfolio/build/_shared/chunk-TTULAAAM.js";import"/ds-portfolio/build/_shared/chunk-W5F6WS2S.js";import"/ds-portfolio/build/_shared/chunk-RAQ24GF6.js";export default a();

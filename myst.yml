@@ -29,6 +29,10 @@ project:
         - file: "Image Classification Using Pre-trained Models.ipynb"
           title: "Task 7: Image Classification Using Pre-trained Models"
 
+        - file: "learning_rate_tuning_fashion_mnist.ipynb"
+          title: "How Learning Rate Shapes the Journey of a Neural Network"
+
+
 site:
   options:
     style: custom.css
